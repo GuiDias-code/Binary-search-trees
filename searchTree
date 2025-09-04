@@ -59,3 +59,22 @@ No* remover(No* raiz, int chave) {
     }
     return raiz;
 }
+
+// Testes de busca
+int valorParaBuscar  6;
+No* resultado = buscar(raiz, valorParaBuscar);
+if (resultado !- NULL) {
+  printf("Valor %d encontra na árvore\n", valorParaBuscar);
+} else {
+    printf("Valor %d não encontrado.\n", valoeParaBuscar);
+}
+
+// Teste de remoção
+printf("\nRemovendo o valor 3...\n");
+raiz = remover(raiz, 3);
+printf("Árvore em ordem após remoção: ");
+emOrdem(raiz);
+printf("\n");
+
+retunr 0;
+}
